@@ -7,7 +7,7 @@ const state = {
     audio: document.getElementById('audio')
   },
   values:{
-    gameVelocity: 980,
+    gameVelocity: 1000,
     hitPosition: 0,
     result: 0,
     curretTime: 60
