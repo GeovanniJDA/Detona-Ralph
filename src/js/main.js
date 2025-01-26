@@ -3,10 +3,11 @@ const state = {
     squares: document.querySelectorAll('.square'),
     enemy: document.querySelector('.enemy'),
     timeLeft: document.querySelector('#time-left'),
-    score: document.querySelector('#score02')
+    score: document.querySelector('#score02'),
+    audio: document.getElementById('audio')
   },
   values:{
-    gameVelocity: 1000,
+    gameVelocity: 980,
     hitPosition: 0,
     result: 0,
     curretTime: 60
@@ -28,9 +29,11 @@ function countDown(){
   }
 }
 
-function playSound(audioName){
-  let audio = new Audio(`../audio/${audioName}.m4a`);
+function playSound(){
+  let audio = state.view.audio;
+  audio.currentTime = 0.05;
   audio.volume = 0.2;
+  audio.playbackRate = 1.5;
   audio.play();
 }
 
