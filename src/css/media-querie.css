@@ -1,0 +1,37 @@
+@media screen and (max-width: 450px){
+  .square{
+    width: 120px;
+    height: 120px;
+  }
+
+  .menu-score, .menu-time{
+    font-size: .8rem;
+  }
+
+  .menu-lives img{
+    width: 4rem;
+  }
+
+  .menu-lives h2{
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 360px){
+  .square{
+    width: 100px;
+    height: 100px;
+  }
+
+  .menu-score, .menu-time{
+    font-size: .6rem;
+  }
+
+  .menu-lives img{
+    width: 3rem;
+  }
+
+  .menu-lives h2{
+    font-size: .8rem;
+  }
+}
